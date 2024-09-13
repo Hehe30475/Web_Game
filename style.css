@@ -398,3 +398,145 @@ header{
     background: gray;
     transition: 0.3s all linear;
 }
+
+
+.video-container video{
+    width: 100%;
+    aspect-ratio: 16/9;
+
+}
+
+.video-container{
+    margin-top: 5rem;
+}
+
+.about{
+    margin-top: 2rem;
+}
+
+.about h2{
+    display: inline-flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-bottom: 4px solid orangered;
+}
+
+.about p{
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.screenshots h2{
+    display: inline-flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-bottom: 4px solid orangered;
+    margin: 1.6rem 0;
+
+}
+
+.screenshots-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    gap:  10px;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.screenshots-content img{
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+.download{
+    max-width: 800x;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.download h2{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1.6rem 0;
+}
+
+.download-link{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+
+}
+
+.download-link a{
+    text-align: center;
+    background: orangered;
+    padding: 12px 20px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.download-link a:hover{
+    background: gray;
+    transition: 0.3s all linear;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+.progress{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    z-index: 300;
+}
+
+.progress-bar{
+    height: 4px;
+    background: orangered;
+    width: 0%;
+}
+
+@media (max-width: 1080px) {
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .nav{
+        padding: 10px 0;
+    }
+    .notification{
+        right: 4rem;
+    }
+    .menu img{
+        width: 500px;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .home{
+        margin-top: 4rem !important;
+        min-height: 440px;
+    }
+    .home img{
+        border-radius: 1rem;
+    }
+    .new-content{
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+    .video-container{
+        margin-top: 5rem !important;
+    }
+}
